@@ -1,8 +1,7 @@
 import React from "react";
 
-function Food(props) {
-  console.log(props);
-  return <h1>I like {props.name}</h1>;
+function Food({ name }) {
+  return <h1>I like {name}</h1>;
 }
 function App() {
   return (
@@ -12,7 +11,6 @@ function App() {
       <Food name="ramen" />
       <Food name="samgiopsal" />
       <Food name="chukumi" />
-
     </div>
   );
 }

@@ -3,14 +3,15 @@ import React from "react";
 function Food({ name }) {
   return <h1>I like {name}</h1>;
 }
+
+const foodlILike = ["Potato", "ramen", "samgiopsal", "chukumi"];
+
 function App() {
   return (
     <div className="App">
-      <h1>Hello!!!</h1>
-      <Food name="Potato" />
-      <Food name="ramen" />
-      <Food name="samgiopsal" />
-      <Food name="chukumi" />
+      {foodlILike.map((food) => (
+        <Food name={food} />
+      ))}
     </div>
   );
 }
